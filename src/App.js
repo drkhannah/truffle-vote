@@ -44,7 +44,6 @@ class App extends Component {
             <OnlyAuthLinks />
           </ul>
         </nav>
-
         {this.props.children}
       </div>
     );
