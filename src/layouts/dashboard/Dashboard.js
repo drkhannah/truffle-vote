@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import VoteFormContainer from './voteform/VoteFormContainer'
+import VoteFormContainer from '../../voteform/VoteFormContainer'
 
 class Dashboard extends Component {
   constructor(props, { authData }) {

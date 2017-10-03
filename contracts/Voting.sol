@@ -29,6 +29,24 @@ contract Voting {
         return votesReceived[candidate];
     }
 
+    //return votes for all candidates
+    function getAllVotes() constant returns (uint8[]) {
+        uint8[] memory totalVotes = new uint8[](candidateList.length);
+
+        for(uint i = 0; i < candidateList.length; i++) {
+            bytes32 candidate = candidateList[i];
+            totalVotes[i] = votesReceived[candidate];
+        }
+        return totalVotes;
+    }
+
+    // This function returns all candidates
+    function getCandidateList() returns (bytes32[]) {
+        return candidateList;
+    }
+
+    //get mapping of candidates and votes
+
     // This function increments the vote count for the specified candidate. This
     // is equivalent to casting a vote
     function voteForCandidate(bytes32 candidate) {
