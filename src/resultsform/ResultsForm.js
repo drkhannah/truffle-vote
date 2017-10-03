@@ -15,7 +15,7 @@ class ResultsForm extends Component {
             return this.props.allVotes.data.totalVotesForCandidates.map((result, idx) => {
                 return (
                     <li key={idx}>
-                        {result.c[0]}
+                        {this.state.candidates[idx]} <strong>Total Votes:</strong> {result.c[0]}
                     </li>
                 )
             })
