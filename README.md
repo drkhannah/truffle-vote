@@ -1,6 +1,6 @@
 Simple Dapp that lest you vote on a testrpc blockchain. Authentication is also performed on the blockchain.
 
-<h1>Installation</h1>
+## Installation
 
 Install truffle and an ethereum client. For local development, try EthereumJS TestRPC.
 
@@ -8,16 +8,16 @@ Install truffle and an ethereum client. For local development, try EthereumJS Te
 
 `npm install -g ethereumjs-testrpc`
 
-<h3>Install Dependencies</h3>
+## Install Dependencies
 in the project root directory run:
 
 `npm install`
 
-<h3>Start local blockchain</h3>
+## Start local blockchain
 
 `testrpc`
 
-<h3>Compile and migrate the contracts.</h3>
+## Compile and migrate the contracts.
 
 in the project root directory run:
 
@@ -25,9 +25,9 @@ in the project root directory run:
 
 `truffle migrate`
 
-<h3>Serve Project</h3>
+## Serve Project
 
 `npm run start`
 
-<h3>Copy Mneumonic phrase into MetaMask</h3>
-Install the MetaMask Chrome extention. Connect to testrpc network. Copy Mneumonic phrase into MetaMask. Select an account in MetaMask
+## Copy Mneumonic phrase into MetaMask
+Install the MetaMask Chrome extension. Connect to testrpc network. Copy Mneumonic phrase into MetaMask. Select an account in MetaMask
