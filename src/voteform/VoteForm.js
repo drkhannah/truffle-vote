@@ -26,21 +26,22 @@ class VoteForm extends Component {
     render() {
         return (
             <form className="pure-form pure-form-stacked" onSubmit={this.handleSubmit.bind(this)}>
+                <h2>Presidential Election</h2>
                 <fieldset>
                     <input id="name0" type="radio" value={this.state.candidates[0]}
                            checked={this.state.selectedCandidate === this.state.candidates[0]}
                            onChange={this.onInputChange.bind(this)}/>
-                    {this.state.candidates[0]}
+                    {" "}{this.state.candidates[0]}
                     <br/>
                     <input id="name1" type="radio" value={this.state.candidates[1]}
                            checked={this.state.selectedCandidate === this.state.candidates[1]}
                            onChange={this.onInputChange.bind(this)}/>
-                    {this.state.candidates[1]}
+                    {" "}{this.state.candidates[1]}
                     <br/>
                     <input id="name2" type="radio" value={this.state.candidates[2]}
                            checked={this.state.selectedCandidate === this.state.candidates[2]}
                            onChange={this.onInputChange.bind(this)}/>
-                    {this.state.candidates[2]}
+                    {" "}{this.state.candidates[2]}
                     <br/>
                     <br/>
                     <button type="submit" className="pure-button pure-button-primary">Vote</button>
